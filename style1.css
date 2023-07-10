@@ -1,0 +1,256 @@
+/* CSS variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-size-base: 16px;
+    --font-family-base: Arial, sans-serif;
+}
+/* Global styles */
+body {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-base);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+html, body {
+    height: 100%;
+}
+h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    
+}
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+    margin-top: 1em;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.item h2 {
+    margin-top: 0.5em;
+}
+.item p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+.item img{
+    height: 200px;
+}
+
+.cart-table {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.cart-table tr{
+    margin: 10px;
+}
+.cart-container {
+    overflow: hidden;
+}
+#go-back{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.customer-details{
+    display: flex;
+    flex-direction: column;
+
+}
+.product_img{
+    
+    max-height: 35%;
+}
+.mini-cart {
+    display: none;
+}
+.mini-cart__list{
+    padding-right: 30px;
+}
+.mini-cart.active {
+    display: block;
+}
+
+.cart_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.customer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_grid{
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.cart-badge{
+    margin-left: 40px;
+
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+.cart_page_link{
+    margin: 20px;
+}
+.place-order{
+    color: red;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+}
+#place-order-form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quantity{
+    width: 25px;
+    
+}
+.add_to_cart_button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: -4px;
+    cursor: pointer;
+}
+.product-details{
+    align-self: center;
+}
+.go_back_button{
+    margin-left: 40px;
+    width: fit-content;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #F2F3F4;
+    border: none;
+    font-size: 16px;
+}
+#cart-badge{
+    margin-left: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: #CACFD2;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+header{
+    background-color: #CACFD2;
+}
+.back-button{
+    background-color: #F2F3F4;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+.product_details{
+    background-color: red;
+}
+.mini-cart__list li{
+    list-style-type: none;
+}
+.cart_page_link{
+    text-decoration: none; 
+    margin-left: 40px;
+    color: #17202A;
+}
+#mini-cart-container{
+    background-color: #FBFCFC;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.remove-from-cart{
+    border: none;
+    background-color: #FBFCFC;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+.product-info{
+    padding: 20px;
+    background-color: #ECF0F1;
+    border-radius: 25px;
+    border: 2px solid #ECF0F1;
+}
+
+.footer{
+    display: block;
+    background-color: #CACFD2;
+    margin-top: auto;
+    width: 100%;
+    
+    
+}
+.footer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.shopping-cart{
+    background-color: #CACFD2;
+}
+.items-in-cart{
+    background-color: #FBFCFC;
+    border-radius: 20px;
+    border: 2px solid #FBFCFC;
+}
+.customer-details{
+    background-color: #FBFCFC;
+    border-radius: 20px;
+    border: 2px solid #FBFCFC;
+    padding: 20px;
+}
+.label{
+    margin-bottom: 5px;
+}
+.input{
+    margin-bottom: 7.5px;
+}
